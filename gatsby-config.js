@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Collective`,
-    description: `Collective Content`,
+    title: `Thingity Example`,
+    description: `Example use of thingity Gatsby plugin`,
     author: `Ian`
   },
   plugins: [
@@ -14,7 +14,6 @@ module.exports = {
       },
       resolve: `gatsby-source-filesystem`,
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-typescript`,
+    `gatsby-transformer-remark`
   ]
 }
