@@ -4,7 +4,7 @@
   "description": "Example usage of gatsby-plugin-thingity",
   "version": "0.0.1",
   "dependencies": {
-    "@ianhomer/gatsby-plugin-things": "^0.0.2",
+    "@ianhomer/gatsby-plugin-things": "^0.0.4",
     "gatsby": "^2.18.7",
     "gatsby-plugin-react-helmet": "^3.1.16",
     "gatsby-source-filesystem": "^2.1.40",
