@@ -1,5 +1,7 @@
 .cache
 .idea/sonarlint
 .idea/workspace.xml
+.firebase
 node_modules
 public
+*.log
