@@ -12,6 +12,8 @@ jobs:
         node-version: [12.x]
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v1
     - name: NPM Cache
       uses: actions/cache@v1
       with:
@@ -19,8 +21,6 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-    - name: Checkout
-      uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
