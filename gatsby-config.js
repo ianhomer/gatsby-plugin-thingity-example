@@ -4,7 +4,6 @@ module.exports = {
     description: `Example use of thingity Gatsby plugin`,
     author: `Ian`
   },
-  pathPrefix: `/example.things.purplepip.com`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
