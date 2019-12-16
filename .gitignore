@@ -2,6 +2,7 @@
 .idea/sonarlint
 .idea/workspace.xml
 .firebase
+cypress/videos
 node_modules
 public
 *.log

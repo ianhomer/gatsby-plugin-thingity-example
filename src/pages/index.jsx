@@ -7,7 +7,7 @@ export default ({ data }) => {
     <ThingLink key={edge.node.id} node={edge.node} />
   ));
   return (
-    <div>
+    <div id='things'>
       {links}
     </div>
   );

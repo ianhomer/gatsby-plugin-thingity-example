@@ -16,10 +16,19 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "clean": "gatsby clean",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "test": "start-server-and-test serve http://localhost:9000 test:serve",
+    "test:serve": "CYPRESS_baseUrl=http://localhost:9000 cypress run"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "cypress": "^3.7.0",
+    "start-server-and-test": "^1.10.6"
   }
 }
