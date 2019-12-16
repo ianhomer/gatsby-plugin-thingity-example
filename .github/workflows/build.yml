@@ -3,7 +3,7 @@ name: Build
 on: [push]
 
 jobs:
-  build:
+  build-publish:
 
     runs-on: ubuntu-latest
 
@@ -26,3 +26,12 @@ jobs:
       env:
         CI: true
         NODE_AUTH_TOKEN: ${{ secrets.READ_PACKAGES_PAT }}
+
+    - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      with:
+        version: '270.0.0'
+        service_account_email: ${{ secrets.GKE_THINGS_EMAIL }}
+        service_account_key: ${{ secrets.GKE_THINGS_KEY }}
+    - name: Publish
+      run: |
+        gsutil cp public gs://example.things.purplepip.com
