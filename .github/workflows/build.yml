@@ -35,5 +35,5 @@ jobs:
         service_account_key: ${{ secrets.GKE_THINGS_KEY }}
     - name: Publish
       run: |
-        gsutil web set -m index.html -e 404.html gs://www.example.com
+        gsutil web set -m index.html -e 404.html gs://example.things.purplepip.com
         gsutil -m rsync -R public gs://example.things.purplepip.com
