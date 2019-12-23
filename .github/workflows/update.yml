@@ -18,5 +18,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         LOG_LEVEL: debug
         UPDATE_COMMAND: npm
+        NODE_AUTH_TOKEN: ${{ secrets.READ_PACKAGES_PAT }}
       with:
         args: update

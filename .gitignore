@@ -7,3 +7,4 @@ cypress/screenshots
 node_modules
 public
 *.log
+*.swp
